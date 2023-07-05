@@ -1,11 +1,11 @@
-```html
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sophie Horvath's Resume</title>
+    <title>Sophie Horvath</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #DCF29B;
         }
 
         header {
@@ -60,22 +60,21 @@
             <h1>Sophie Horvath</h1>
         </div>
     </header>
-    <div class="sidebar">
+   <div class="sidebar">
         <ul>
-            <li>About</li>
+            <li><button onclick="alert('About button clicked')">About</button></li>
             <li>
-                Journalism
-                <ul>
+                <button class="dropdown-btn" onclick="toggleDropdown()">Journalism</button>
+                <ul id="journalism-dropdown">
                     <li>Berkeley High Jacket</li>
                     <li>Daily Californian</li>
                     <li>Video</li>
                 </ul>
             </li>
-            <li>Photography</li>
-            <li>Experience</li>
+            <li><button onclick="alert('Photography button clicked')">Photography</button></li>
+            <li><button onclick="alert('Experience button clicked')">Experience</button></li>
         </ul>
     </div>
-    <!-- Add more sections for your CV details like experience, education, skills etc. -->
 </body>
 </html>
 ```
